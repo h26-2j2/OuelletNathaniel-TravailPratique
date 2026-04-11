@@ -29,7 +29,7 @@ public class SceneController : MonoBehaviour
     IEnumerator SwitchScene(string sceneName)
     {
         Instantiate(fadeOut);
-        yield return new WaitForSeconds(4.75f);
+        yield return new WaitForSeconds(fadeDelay);
         var asyncLoadScene = SceneManager.LoadSceneAsync(sceneName);
         while(!asyncLoadScene.isDone)
         {
