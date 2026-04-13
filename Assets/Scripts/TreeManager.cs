@@ -15,7 +15,7 @@ public class TreeManager : MonoBehaviour
         }
         else
         {
-            Destroy(gameObject);
+            Destroy(this);
         }
 
         Invoke("GlintRandom", Random.Range(glintDelay.x + 1, glintDelay.y + 1));
@@ -38,7 +38,10 @@ public class TreeManager : MonoBehaviour
 
     void GlintRandom()
     {
-        apples[Random.Range(0, apples.Count)].GlintAnimation(); // min inclusive but max exclusive, so don't substract to get the right upper limit because of course
+        if (apples.Count > 0)
+        {
+            apples[Random.Range(0, apples.Count)].GlintAnimation(); // min inclusive but max exclusive, so don't substract to get the right upper limit because of course
+        }
 
         Invoke("GlintRandom", Random.Range(glintDelay.x, glintDelay.y));
     }

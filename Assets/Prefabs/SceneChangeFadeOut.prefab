@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 9122984175980033770}
   - component: {fileID: 6783646835181505314}
   - component: {fileID: 5783590593601070596}
-  - component: {fileID: 8498168699035988396}
+  - component: {fileID: 3329263132521006671}
   m_Layer: 5
   m_Name: SceneChangeFadeOut
   m_TagString: Untagged
@@ -85,7 +85,7 @@ MonoBehaviour:
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
   m_PresetInfoIsWorld: 0
---- !u!114 &8498168699035988396
+--- !u!114 &3329263132521006671
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
