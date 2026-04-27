@@ -24,6 +24,7 @@ public class TreeManager : MonoBehaviour
     public void AddAppleToPool(ApplePick apple)
     {
         apples.Add(apple);
+        AppleCounter.instance.AddToBaseCounter(false);
     }
 
     public void RemoveAppleFromPool(ApplePick apple)
