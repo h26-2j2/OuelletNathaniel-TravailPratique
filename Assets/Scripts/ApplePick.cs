@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class ApplePick : MonoBehaviour
@@ -5,6 +6,8 @@ public class ApplePick : MonoBehaviour
     bool picked;
     Animator animator;
     public Transform apple;
+    public Vector2 appleOrigin;
+    public GameObject glint;
     bool movingTowardsCounter = false;
     float counterMoveTime;
     public float counterMoveDuration = 5f;
@@ -22,14 +25,18 @@ public class ApplePick : MonoBehaviour
             counterMoveTime += Time.deltaTime / counterMoveDuration;
 
             apple.position = new Vector2(
-                Mathf.SmoothStep(apple.position.x, AppleCounter.instance.appleIcon.position.x, counterMoveTime),
-                Mathf.SmoothStep(apple.position.y, AppleCounter.instance.appleIcon.position.y, counterMoveTime));
+                Mathf.SmoothStep(appleOrigin.x, AppleCounter.instance.appleIcon.position.x, counterMoveTime),
+                Mathf.SmoothStep(appleOrigin.y, AppleCounter.instance.appleIcon.position.y, counterMoveTime));
 
-            if (counterMoveTime > 0.5f)
+            apple.localScale = new Vector2(
+                Mathf.SmoothStep(1f, 0f, (counterMoveTime - 0.5f) * 2f),
+                Mathf.SmoothStep(1f, 0f, (counterMoveTime - 0.5f) * 2f));
+
+            if (counterMoveTime >= 1f)
             {
-                apple.localScale = new Vector2(
-                    Mathf.SmoothStep(1f, 0f, (counterMoveTime - 0.5f) * 2f),
-                    Mathf.SmoothStep(1f, 0f, (counterMoveTime - 0.5f) * 2f));
+                AppleCounter.instance.changeCounter();
+                movingTowardsCounter = false;
+                apple.localScale = new Vector2(0f, 0f);
             }
         }
     }
@@ -39,6 +46,7 @@ public class ApplePick : MonoBehaviour
         if (!picked)
         {
             picked = true;
+            glint.SetActive(false);
             TreeManager.instance.RemoveAppleFromPool(this);
         }
     }
@@ -50,6 +58,7 @@ public class ApplePick : MonoBehaviour
 
     public void MoveTowardsCounter()
     {
+        appleOrigin = apple.position;
         movingTowardsCounter = true;
     }
 }

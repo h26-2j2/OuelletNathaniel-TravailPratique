@@ -35,7 +35,23 @@ public class AppleCounter : MonoBehaviour
 
     public void changeCounter(bool reduce = false)
     {
-        if (reduce) { counter--; }
-        else { counter++; }
+        if (reduce)
+        {
+            counter--;
+
+            if (counter <= 0)
+            {
+                gameObject.GetComponent<ObjectEvent>().TriggerEvents();
+            }
+        }
+        else
+        {
+            counter++;
+
+            if (counter >= counterMax)
+            {
+                gameObject.GetComponent<ObjectEvent>().TriggerEvents();
+            }
+        }
     }
 }
