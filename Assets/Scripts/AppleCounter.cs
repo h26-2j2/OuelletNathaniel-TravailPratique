@@ -8,6 +8,7 @@ public class AppleCounter : MonoBehaviour
     public int counter;
     public int counterMax;
     public TMP_Text counterText;
+    string counterBaseText;
     public Transform appleIcon;
 
     void Awake()
@@ -20,17 +21,22 @@ public class AppleCounter : MonoBehaviour
         {
             Destroy(this);
         }
+
+        counterBaseText = counterText.text;
     }
 
-    void Update()
+    void UpdateCounter(bool textOnly = false)
     {
-        counterText.text = counter + "/" + counterMax;
+        counterText.text = counterBaseText + counter + "/" + counterMax;
+        if (textOnly) { return; } // Skip the rest if only wanting to update the text as defined by adding true when calling this function
+
     }
 
     public void AddToBaseCounter(bool addValue = false)
     {
         counterMax++;
         if (addValue) { counter++; }
+        UpdateCounter(true);
     }
 
     public void changeCounter(bool reduce = false)
@@ -53,5 +59,6 @@ public class AppleCounter : MonoBehaviour
                 gameObject.GetComponent<ObjectEvent>().TriggerEvents();
             }
         }
+        UpdateCounter();
     }
 }

@@ -1,4 +1,3 @@
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class ApplePick : MonoBehaviour
@@ -29,8 +28,8 @@ public class ApplePick : MonoBehaviour
                 Mathf.SmoothStep(appleOrigin.y, AppleCounter.instance.appleIcon.position.y, counterMoveTime));
 
             apple.localScale = new Vector2(
-                Mathf.SmoothStep(1f, 0f, (counterMoveTime - 0.5f) * 2f),
-                Mathf.SmoothStep(1f, 0f, (counterMoveTime - 0.5f) * 2f));
+                Mathf.SmoothStep(1f, 0f, (counterMoveTime * 2f) - 1f),
+                Mathf.SmoothStep(1f, 0f, (counterMoveTime * 2f) - 1f));
 
             if (counterMoveTime >= 1f)
             {
@@ -58,7 +57,7 @@ public class ApplePick : MonoBehaviour
 
     public void MoveTowardsCounter()
     {
-        appleOrigin = apple.position;
+        appleOrigin = apple.position; // Save current position so the transition working in relation to the counter's apple can have something to work with
         movingTowardsCounter = true;
     }
 }

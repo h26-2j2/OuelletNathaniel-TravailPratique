@@ -20,6 +20,9 @@ public class ObjectEvent : MonoBehaviour
     [Space(8)]
     public GameEvent events;
 
+    // This is a script I made some time ago for my own game, it builds off "GameEvent" and makes it something you can access in the editor and call to and from very easily.
+    // Helps streamline some stuff that would otherwise be annoying or redundant to add in other scripts by implementing the logic in the inspector instead.
+
     void Awake()
     {
         if (activateOnAwake)

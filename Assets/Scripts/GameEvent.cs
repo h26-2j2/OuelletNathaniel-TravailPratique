@@ -13,6 +13,8 @@ public class GameEvent
     [Space(6)]
     public UltEvents.UltEvent onDisActivate;
 
+    // This is a script I made some time ago for my own game, you can integrate it into another script to handle events.
+
     public void Invoke()
     {
         if (toDisActivateObjects != null)
