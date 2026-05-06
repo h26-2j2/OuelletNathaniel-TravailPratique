@@ -6,12 +6,10 @@ using UnityEngine.Events;
 public class GameEvent
 {
     public GameObject[] toActivateObjects;
-    [Space(6)]
+    [Space(4)]
     public GameObject[] toDisActivateObjects;
-    [Space(23)]
-    public UltEvents.UltEvent onActivate;
     [Space(6)]
-    public UltEvents.UltEvent onDisActivate;
+    public UltEvents.UltEvent onActivate; // Better version of unity events, good library
 
     // This is a script I made some time ago for my own game, you can integrate it into another script to handle events.
 
@@ -38,36 +36,6 @@ public class GameEvent
             }
         }
         UltEvents.UltEvent unityEvent = onActivate;
-        if (unityEvent == null)
-        {
-            return;
-        }
-        unityEvent.Invoke();
-    }
-
-    public void Revert()
-    {
-        if (toDisActivateObjects != null)
-        {
-            foreach (GameObject gameObject in toDisActivateObjects)
-            {
-                if (gameObject)
-                {
-                    gameObject.SetActive(true);
-                }
-            }
-        }
-        if (toActivateObjects != null)
-        {
-            foreach (GameObject gameObject2 in toActivateObjects)
-            {
-                if (gameObject2)
-                {
-                    gameObject2.SetActive(false);
-                }
-            }
-        }
-        UltEvents.UltEvent unityEvent = onDisActivate;
         if (unityEvent == null)
         {
             return;

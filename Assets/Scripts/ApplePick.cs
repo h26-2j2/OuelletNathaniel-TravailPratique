@@ -3,18 +3,17 @@ using UnityEngine;
 public class ApplePick : MonoBehaviour
 {
     bool picked;
-    Animator animator;
     public Transform apple;
     public Vector2 appleOrigin;
     public GameObject glint;
     bool movingTowardsCounter = false;
     float counterMoveTime;
     public float counterMoveDuration = 5f;
+    Apple appleScript;
 
     void Start()
     {
-        TreeManager.instance.AddAppleToPool(this);
-        animator = GetComponentInChildren<Animator>();
+        appleScript = gameObject.GetComponent<Apple>();
     }
 
     void Update()
@@ -46,13 +45,8 @@ public class ApplePick : MonoBehaviour
         {
             picked = true;
             glint.SetActive(false);
-            TreeManager.instance.RemoveAppleFromPool(this);
+            AppleManager.instance.RemoveAppleFromPool(appleScript);
         }
-    }
-
-    public void GlintAnimation()
-    {
-        animator.Play("Glint");
     }
 
     public void MoveTowardsCounter()

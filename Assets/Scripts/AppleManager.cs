@@ -1,11 +1,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TreeManager : MonoBehaviour
+public class AppleManager : MonoBehaviour
 {
-    public static TreeManager instance;
+    public static AppleManager instance;
     public Vector2 glintDelay;
-    List<ApplePick> apples = new List<ApplePick>();
+    List<Apple> apples = new List<Apple>();
+    public Vector2 worldBordersX;
+    public Vector2 worldBordersY;
+    BoxCollider2D worldBorders;
 
     void Awake()
     {
@@ -18,23 +21,21 @@ public class TreeManager : MonoBehaviour
             Destroy(this);
         }
 
+        worldBorders = GetComponent<BoxCollider2D>();
+        worldBordersX = new Vector2(worldBorders.bounds.min.x, worldBorders.bounds.max.x);
+        worldBordersY = new Vector2(worldBorders.bounds.min.y, worldBorders.bounds.max.y);
         Invoke("GlintRandom", Random.Range(glintDelay.x + 1, glintDelay.y + 1)); // Add a delay in case one of them is 0 and that apples haven't been added to the pool yet
     }
 
-    public void AddAppleToPool(ApplePick apple)
+    public void AddAppleToPool(Apple apple)
     {
         apples.Add(apple);
         AppleCounter.instance.AddToBaseCounter(false);
     }
 
-    public void RemoveAppleFromPool(ApplePick apple)
+    public void RemoveAppleFromPool(Apple apple)
     {
         apples.Remove(apple);
-
-        if (apples.Count == 0)
-        {
-
-        }
     }
 
     void GlintRandom()

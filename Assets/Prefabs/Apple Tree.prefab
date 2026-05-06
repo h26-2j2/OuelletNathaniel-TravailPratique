@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8394151856397663502}
+  - component: {fileID: 5822889748868927569}
   - component: {fileID: 9083425752903235511}
   - component: {fileID: 2716202900658291024}
   - component: {fileID: 3415391206683849056}
@@ -40,6 +41,18 @@ Transform:
   - {fileID: 8073922710722357853}
   m_Father: {fileID: 955172965529070702}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5822889748868927569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 34670949693057206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7601110b47b438a4290fc80fb9e54ced, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Apple
 --- !u!114 &9083425752903235511
 MonoBehaviour:
   m_ObjectHideFlags: 0

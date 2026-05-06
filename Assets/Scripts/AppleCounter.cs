@@ -29,7 +29,6 @@ public class AppleCounter : MonoBehaviour
     {
         counterText.text = counterBaseText + counter + "/" + counterMax;
         if (textOnly) { return; } // Skip the rest if only wanting to update the text as defined by adding true when calling this function
-
     }
 
     public void AddToBaseCounter(bool addValue = false)
