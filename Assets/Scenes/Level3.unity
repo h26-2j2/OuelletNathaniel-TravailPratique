@@ -130,6 +130,7 @@ GameObject:
   - component: {fileID: 49057627}
   - component: {fileID: 49057626}
   - component: {fileID: 49057628}
+  - component: {fileID: 49057629}
   m_Layer: 0
   m_Name: LevelManager
   m_TagString: Untagged
@@ -150,6 +151,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TreeManager
   glintDelay: {x: 3.5, y: 5.5}
+  worldBordersX: {x: 0, y: 0}
+  worldBordersY: {x: 0, y: 0}
 --- !u!4 &49057627
 Transform:
   m_ObjectHideFlags: 0
@@ -178,6 +181,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SoundManager
   soundObject: {fileID: 7474391580076276776, guid: 6009661f15f059a41b658d92b31d9d51, type: 3}
+--- !u!114 &49057629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 49057625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c57180ffcb4398d47ab95b14796ace07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SceneController
+  fadeIn: {fileID: 1664651600600354381, guid: c6b46296756ce4a4eb27f314f8b0b426, type: 3}
+  fadeOut: {fileID: 5117410619708466826, guid: a4c2f129617a8f3419b3ed4940ca19b2, type: 3}
+  fadeDelay: 1
 --- !u!1 &303298374
 GameObject:
   m_ObjectHideFlags: 0
@@ -752,8 +770,6 @@ MonoBehaviour:
     toActivateObjects: []
     toDisActivateObjects: []
     onActivate:
-      _PersistentCalls: []
-    onDisActivate:
       _PersistentCalls: []
 --- !u!1 &1796298857
 GameObject:

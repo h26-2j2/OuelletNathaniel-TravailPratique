@@ -21,9 +21,12 @@ public class AppleManager : MonoBehaviour
             Destroy(this);
         }
 
-        worldBorders = GetComponent<BoxCollider2D>();
-        worldBordersX = new Vector2(worldBorders.bounds.min.x, worldBorders.bounds.max.x);
-        worldBordersY = new Vector2(worldBorders.bounds.min.y, worldBorders.bounds.max.y);
+        if (gameObject.TryGetComponent<BoxCollider2D>(out worldBorders))
+        {
+            worldBordersX = new Vector2(worldBorders.bounds.min.x, worldBorders.bounds.max.x);
+            worldBordersY = new Vector2(worldBorders.bounds.min.y, worldBorders.bounds.max.y);
+        }
+
         Invoke("GlintRandom", Random.Range(glintDelay.x + 1, glintDelay.y + 1)); // Add a delay in case one of them is 0 and that apples haven't been added to the pool yet
     }
 

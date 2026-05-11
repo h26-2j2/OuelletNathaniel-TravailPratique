@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6783646835181505314}
   - component: {fileID: 5783590593601070596}
   - component: {fileID: 3329263132521006671}
+  - component: {fileID: 6378156249650999076}
   m_Layer: 5
   m_Name: SceneChangeFadeOut
   m_TagString: Untagged
@@ -102,6 +103,44 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &6378156249650999076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5117410619708466826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf2d798cb8df8be43907614c575716df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectEvent
+  oneTime: 1
+  activateOnAwake: 1
+  activateOnEnable: 0
+  delay: 1.5
+  loop: 0
+  loopTime: 0.5
+  loopFinite: 0
+  loopAmount: 1
+  events:
+    toActivateObjects: []
+    toDisActivateObjects: []
+    onActivate:
+      _PersistentCalls:
+      - _Target: {fileID: 0}
+        _MemberName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null.Destroy
+        _PersistentArguments:
+        - _Type: 13
+          _Int: 0
+          _String: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+            PublicKeyToken=null
+          _X: 0
+          _Y: 0
+          _Z: 0
+          _W: 0
+          _Object: {fileID: 5117410619708466826}
 --- !u!1 &6404833017112925551
 GameObject:
   m_ObjectHideFlags: 0

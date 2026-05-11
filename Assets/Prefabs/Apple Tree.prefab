@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 5873422363019444459}
   m_Layer: 0
   m_Name: ApplePick
-  m_TagString: Untagged
+  m_TagString: Apple
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -155,8 +155,6 @@ MonoBehaviour:
       - _Target: {fileID: 5861561243073440927}
         _MemberName: TriggerEvents
         _PersistentArguments: []
-    onDisActivate:
-      _PersistentCalls: []
 --- !u!114 &5861561243073440927
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -196,8 +194,6 @@ MonoBehaviour:
           _Z: 0
           _W: 0
           _Object: {fileID: 0}
-    onDisActivate:
-      _PersistentCalls: []
 --- !u!114 &770821087212689590
 MonoBehaviour:
   m_ObjectHideFlags: 0

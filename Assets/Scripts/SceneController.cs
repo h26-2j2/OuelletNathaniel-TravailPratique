@@ -7,7 +7,7 @@ public class SceneController : MonoBehaviour
     public static SceneController instance;
     [SerializeField] GameObject fadeIn;
     [SerializeField] GameObject fadeOut;
-    [SerializeField] float fadeDelay;
+    [SerializeField] float fadeDelay = 1f;
 
     void Awake()
     {

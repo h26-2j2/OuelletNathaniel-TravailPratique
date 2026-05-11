@@ -1,2 +1,13 @@
 fileFormatVersion: 2
 guid: c57180ffcb4398d47ab95b14796ace07
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - fadeIn: {fileID: 1664651600600354381, guid: c6b46296756ce4a4eb27f314f8b0b426, type: 3}
+  - fadeOut: {fileID: 5117410619708466826, guid: a4c2f129617a8f3419b3ed4940ca19b2, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
