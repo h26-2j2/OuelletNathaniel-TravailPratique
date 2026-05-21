@@ -50,6 +50,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7601110b47b438a4290fc80fb9e54ced, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Apple
+  animator: {fileID: 0}
 --- !u!114 &843580286009427499
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -19,6 +19,13 @@ public class AppleDirty : MonoBehaviour
     public Color colorDirtTarget;
     public SpriteRenderer spriteClean;
 
+    private void Start()
+    {
+        colorDirtyBaseOrigin = spriteDirtyBase.color;
+        colorDirtyLightOrigin = spriteDirtyLight.color;
+        colorDirtOrigin = spriteDirt.color;
+    }
+
     private void Update()
     {
         if (isCleaning && !cleaned)
