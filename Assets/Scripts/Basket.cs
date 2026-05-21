@@ -23,6 +23,7 @@ public class Basket : MonoBehaviour
             parent.SetActive(false);
             SoundManager.instance.PlaySound(basketSounds.audioClips[Random.Range(0, basketSounds.audioClips.Count)]);
             AppleCounter.instance.changeCounter();
+            VoiceLinePlayer.instance.PlayCongratulation();
         }
     }
 }

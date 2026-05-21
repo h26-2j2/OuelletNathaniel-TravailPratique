@@ -3,12 +3,11 @@ using UnityEngine;
 public class VoiceLinePlayer : MonoBehaviour
 {
     public static VoiceLinePlayer instance;
-    public Vector2 hintCooldown = new Vector2(5f, 10f);
+    public Vector2 instructionRepeatDelayRange = new Vector2(10f, 14f);
     AudioSource audioSource;
-    float soundLength;
-    public SoundData instructionPool;
+    float instructionRepeatDelay = 3.5f;
+    public AudioClip instruction;
     public SoundData congratulatePool;
-    public SoundData finalPool;
 
     void Awake()
     {
@@ -24,12 +23,33 @@ public class VoiceLinePlayer : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
     }
 
-    public void PlayLine(AudioClip audioClip, float volume = 1f, float pitch = 1f)
+    private void Update()
+    {
+        instructionRepeatDelay -= Time.deltaTime;
+
+        if (instructionRepeatDelay <= 0)
+        {
+            instructionRepeatDelay = Random.Range(instructionRepeatDelayRange.x, instructionRepeatDelayRange.y);
+            PlayInstruction();
+        }
+    }
+
+    public void PlayInstruction()
+    {
+        PlayLine(instruction);
+    }
+
+    public void PlayCongratulation()
+    {
+        PlayLine(congratulatePool.audioClips[Random.Range(0, congratulatePool.audioClips.Count)]);
+    }
+
+    void PlayLine(AudioClip audioClip, float volume = 1f, float pitch = 1f)
     {
         audioSource.clip = audioClip;
         audioSource.volume = volume;
         audioSource.pitch = pitch;
-        soundLength = audioSource.clip.length * 1.2f / pitch;
+        instructionRepeatDelay = Random.Range(instructionRepeatDelayRange.x, instructionRepeatDelayRange.y) + (audioSource.clip.length * 1.2f / pitch);
         audioSource.Play();
     }
 }

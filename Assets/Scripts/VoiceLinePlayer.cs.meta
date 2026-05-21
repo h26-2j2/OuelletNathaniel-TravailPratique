@@ -1,2 +1,13 @@
 fileFormatVersion: 2
 guid: 44c7f140348f66e43834e2fb826fd04d
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - instruction: {instanceID: 0}
+  - congratulatePool: {fileID: 11400000, guid: 85b88005ecd24a640af7b9ebcdd28f82, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
