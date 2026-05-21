@@ -25,7 +25,6 @@ public class SoundManager : MonoBehaviour
         audioSource.volume = volume;
         audioSource.pitch = pitch;
         audioSource.Play();
-        float soundLength = audioSource.clip.length * 1.2f / pitch;
-        Destroy(audioSource.gameObject, soundLength);
+        Destroy(audioSource.gameObject, 9); // Thank you web build for your remarkable inability to function normally, can't even take the length of a sound without throwing errors and making the ENTIRE game stop working
     }
 }
