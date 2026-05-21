@@ -248,6 +248,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Apple Tree (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8394151856397663502, guid: 99fd4c1c0da5f2342818e05455daa002, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 8394151856397663502, guid: 99fd4c1c0da5f2342818e05455daa002, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.61
+      objectReference: {fileID: 0}
     - target: {fileID: 8867865975980736124, guid: 99fd4c1c0da5f2342818e05455daa002, type: 3}
       propertyPath: m_SortingOrder
       value: -10
@@ -388,6 +396,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Apple Tree (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 8394151856397663502, guid: 99fd4c1c0da5f2342818e05455daa002, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.94
+      objectReference: {fileID: 0}
+    - target: {fileID: 8394151856397663502, guid: 99fd4c1c0da5f2342818e05455daa002, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.68
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -520,6 +536,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Apple Tree (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8394151856397663502, guid: 99fd4c1c0da5f2342818e05455daa002, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.29
+      objectReference: {fileID: 0}
+    - target: {fileID: 8394151856397663502, guid: 99fd4c1c0da5f2342818e05455daa002, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.47
+      objectReference: {fileID: 0}
     - target: {fileID: 8867865975980736124, guid: 99fd4c1c0da5f2342818e05455daa002, type: 3}
       propertyPath: m_SortingOrder
       value: -9
@@ -580,6 +604,14 @@ PrefabInstance:
     - target: {fileID: 8136551908760283962, guid: 99fd4c1c0da5f2342818e05455daa002, type: 3}
       propertyPath: m_Name
       value: Apple Tree (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8394151856397663502, guid: 99fd4c1c0da5f2342818e05455daa002, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.94
+      objectReference: {fileID: 0}
+    - target: {fileID: 8394151856397663502, guid: 99fd4c1c0da5f2342818e05455daa002, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.04
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1098,6 +1130,14 @@ PrefabInstance:
     - target: {fileID: 8136551908760283962, guid: 99fd4c1c0da5f2342818e05455daa002, type: 3}
       propertyPath: m_Name
       value: Apple Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 8394151856397663502, guid: 99fd4c1c0da5f2342818e05455daa002, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 8394151856397663502, guid: 99fd4c1c0da5f2342818e05455daa002, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.65
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
