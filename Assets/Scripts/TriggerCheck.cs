@@ -4,14 +4,13 @@ using UnityEngine;
 public class TriggerCheck : MonoBehaviour
 {
     public string triggerNameExpect;
-    public LayerMask layer;
     public GameEvent enterEvents;
     public GameEvent exitEvents;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if ((collision.TryGetComponent<TriggerListener>(out TriggerListener listener)
-            && listener.triggerName == triggerNameExpect) || collision.gameObject.layer == layer)
+            && listener.triggerName == triggerNameExpect))
         {
             enterEvents.Invoke();
         }
@@ -19,7 +18,7 @@ public class TriggerCheck : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         if ((collision.TryGetComponent<TriggerListener>(out TriggerListener listener)
-            && listener.triggerName == triggerNameExpect) || collision.gameObject.layer == layer)
+            && listener.triggerName == triggerNameExpect))
         {
             exitEvents.Invoke();
         }

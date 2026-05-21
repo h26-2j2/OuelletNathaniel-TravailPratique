@@ -45,7 +45,12 @@ public class AppleManager : MonoBehaviour
     {
         if (apples.Count > 0)
         {
-            apples[Random.Range(0, apples.Count)].GlintAnimation(); // min inclusive but max exclusive, so don't substract to get the right upper limit because this is *obviously* very intuitive
+            Apple glintAttemptApple = apples[Random.Range(0, apples.Count)]; // min inclusive but max exclusive, so don't substract to get the right upper limit because this is *obviously* very intuitive
+            if (!glintAttemptApple.animator.GetCurrentAnimatorStateInfo(0).IsName("Glint")) // Messy but there doesn't seem to be any alternative...
+                                                                                            // Gets the name of the currently playing animation so that it avoids restarting the animation
+            {
+                glintAttemptApple.GlintAnimation();
+            }
         }
 
         Invoke("GlintRandom", Random.Range(glintDelay.x, glintDelay.y));

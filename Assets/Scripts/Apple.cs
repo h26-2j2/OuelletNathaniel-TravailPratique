@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Apple : MonoBehaviour
 {
-    Animator animator;
+    public Animator animator;
 
     void Start()
     {

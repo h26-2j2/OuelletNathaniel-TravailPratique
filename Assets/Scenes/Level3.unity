@@ -1453,7 +1453,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 150
   m_MaskInteraction: 0
   m_Sprite: {fileID: 7293598183456022363, guid: a9af4b526681441469cdea752db637c8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1747,6 +1747,16 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &1578843515 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6730685916128474631, guid: 8ada8e111f608454db3706ae2eae8658, type: 3}
+  m_PrefabInstance: {fileID: 2003810003}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &1578843517 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 3225932989806816088, guid: 8ada8e111f608454db3706ae2eae8658, type: 3}
+  m_PrefabInstance: {fileID: 2003810003}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1639964764
 GameObject:
   m_ObjectHideFlags: 0
@@ -2459,7 +2469,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 150
   m_MaskInteraction: 0
   m_Sprite: {fileID: 7293598183456022363, guid: 558549b89b3651b4d99178fa5d382fec, type: 3}
   m_Color: {r: 0.8207547, g: 0.8207547, b: 0.8207547, a: 0}
@@ -2672,6 +2682,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.8207547
       objectReference: {fileID: 0}
+    - target: {fileID: 3225932989806816088, guid: 8ada8e111f608454db3706ae2eae8658, type: 3}
+      propertyPath: m_SortingOrder
+      value: 150
+      objectReference: {fileID: 0}
     - target: {fileID: 3414285777357743223, guid: 8ada8e111f608454db3706ae2eae8658, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -2738,6 +2752,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9da1d62da54686c41b522590161a54d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AppleDirty
+  cleanSpeed: 25
+  isCleaning: 0
+  cleaned: 0
+  onCleaned:
+    toActivateObjects:
+    - {fileID: 1431579116}
+    toDisActivateObjects:
+    - {fileID: 1578843515}
+    - {fileID: 1997651201}
+    - {fileID: 1755329784}
+    onActivate:
+      _PersistentCalls: []
+  spriteDirtyBase: {fileID: 1578843517}
+  colorDirtyBaseTarget: {r: 0.81960785, g: 0.81960785, b: 0.81960785, a: 1}
+  spriteDirtyLight: {fileID: 1997651203}
+  colorDirtyLightTarget: {r: 0.81960785, g: 0.81960785, b: 0.81960785, a: 0.8509804}
+  spriteDirt: {fileID: 1755329786}
+  colorDirtTarget: {r: 0.5754717, g: 0.28600845, b: 0.13843894, a: 0}
+  spriteClean: {fileID: 1431579118}
 --- !u!1 &2003810007 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8803627425292783476, guid: 8ada8e111f608454db3706ae2eae8658, type: 3}
@@ -2763,12 +2796,34 @@ MonoBehaviour:
     toActivateObjects: []
     toDisActivateObjects: []
     onActivate:
-      _PersistentCalls: []
+      _PersistentCalls:
+      - _Target: {fileID: 2003810006}
+        _MemberName: isCleaning=
+        _PersistentArguments:
+        - _Type: 1
+          _Int: 1
+          _String: 
+          _X: 0
+          _Y: 0
+          _Z: 0
+          _W: 0
+          _Object: {fileID: 0}
   exitEvents:
     toActivateObjects: []
     toDisActivateObjects: []
     onActivate:
-      _PersistentCalls: []
+      _PersistentCalls:
+      - _Target: {fileID: 2003810006}
+        _MemberName: isCleaning=
+        _PersistentArguments:
+        - _Type: 1
+          _Int: 0
+          _String: 
+          _X: 0
+          _Y: 0
+          _Z: 0
+          _W: 0
+          _Object: {fileID: 0}
 --- !u!1 &2004798295
 GameObject:
   m_ObjectHideFlags: 0
