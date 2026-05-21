@@ -553,6 +553,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 638748057965253788, guid: 8ada8e111f608454db3706ae2eae8658, type: 3}
+      propertyPath: m_SortingOrder
+      value: 530
+      objectReference: {fileID: 0}
     - target: {fileID: 2040080079639154044, guid: 8ada8e111f608454db3706ae2eae8658, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.31
@@ -599,11 +603,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6235113791193131953, guid: 8ada8e111f608454db3706ae2eae8658, type: 3}
       propertyPath: m_BackSortingOrder
-      value: 530
+      value: 525
       objectReference: {fileID: 0}
     - target: {fileID: 6235113791193131953, guid: 8ada8e111f608454db3706ae2eae8658, type: 3}
       propertyPath: m_FrontSortingOrder
-      value: 530
+      value: 534
       objectReference: {fileID: 0}
     - target: {fileID: 6235113791193131953, guid: 8ada8e111f608454db3706ae2eae8658, type: 3}
       propertyPath: m_IsCustomRangeActive
@@ -622,6 +626,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 638748057965253788, guid: 8ada8e111f608454db3706ae2eae8658, type: 3}
+      propertyPath: m_SortingOrder
+      value: 540
+      objectReference: {fileID: 0}
     - target: {fileID: 2040080079639154044, guid: 8ada8e111f608454db3706ae2eae8658, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.67
@@ -668,11 +676,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6235113791193131953, guid: 8ada8e111f608454db3706ae2eae8658, type: 3}
       propertyPath: m_BackSortingOrder
-      value: 540
+      value: 536
       objectReference: {fileID: 0}
     - target: {fileID: 6235113791193131953, guid: 8ada8e111f608454db3706ae2eae8658, type: 3}
       propertyPath: m_FrontSortingOrder
-      value: 540
+      value: 545
       objectReference: {fileID: 0}
     - target: {fileID: 6235113791193131953, guid: 8ada8e111f608454db3706ae2eae8658, type: 3}
       propertyPath: m_IsCustomRangeActive
@@ -1255,6 +1263,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 638748057965253788, guid: 8ada8e111f608454db3706ae2eae8658, type: 3}
+      propertyPath: m_SortingOrder
+      value: 550
+      objectReference: {fileID: 0}
     - target: {fileID: 2040080079639154044, guid: 8ada8e111f608454db3706ae2eae8658, type: 3}
       propertyPath: m_LocalPosition.x
       value: 9.46
@@ -1301,11 +1313,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6235113791193131953, guid: 8ada8e111f608454db3706ae2eae8658, type: 3}
       propertyPath: m_BackSortingOrder
-      value: 550
+      value: 546
       objectReference: {fileID: 0}
     - target: {fileID: 6235113791193131953, guid: 8ada8e111f608454db3706ae2eae8658, type: 3}
       propertyPath: m_FrontSortingOrder
-      value: 550
+      value: 555
       objectReference: {fileID: 0}
     - target: {fileID: 6235113791193131953, guid: 8ada8e111f608454db3706ae2eae8658, type: 3}
       propertyPath: m_IsCustomRangeActive
@@ -1324,6 +1336,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 638748057965253788, guid: 8ada8e111f608454db3706ae2eae8658, type: 3}
+      propertyPath: m_SortingOrder
+      value: 559
+      objectReference: {fileID: 0}
     - target: {fileID: 2040080079639154044, guid: 8ada8e111f608454db3706ae2eae8658, type: 3}
       propertyPath: m_LocalPosition.x
       value: 8.12
@@ -1370,11 +1386,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6235113791193131953, guid: 8ada8e111f608454db3706ae2eae8658, type: 3}
       propertyPath: m_BackSortingOrder
-      value: 560
+      value: 552
       objectReference: {fileID: 0}
     - target: {fileID: 6235113791193131953, guid: 8ada8e111f608454db3706ae2eae8658, type: 3}
       propertyPath: m_FrontSortingOrder
-      value: 560
+      value: 565
       objectReference: {fileID: 0}
     - target: {fileID: 6235113791193131953, guid: 8ada8e111f608454db3706ae2eae8658, type: 3}
       propertyPath: m_IsCustomRangeActive
@@ -2205,6 +2221,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 638748057965253788, guid: 8ada8e111f608454db3706ae2eae8658, type: 3}
+      propertyPath: m_SortingOrder
+      value: 520
+      objectReference: {fileID: 0}
     - target: {fileID: 2040080079639154044, guid: 8ada8e111f608454db3706ae2eae8658, type: 3}
       propertyPath: m_LocalPosition.x
       value: 10.88
@@ -2251,11 +2271,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6235113791193131953, guid: 8ada8e111f608454db3706ae2eae8658, type: 3}
       propertyPath: m_BackSortingOrder
-      value: 520
+      value: 510
       objectReference: {fileID: 0}
     - target: {fileID: 6235113791193131953, guid: 8ada8e111f608454db3706ae2eae8658, type: 3}
       propertyPath: m_FrontSortingOrder
-      value: 520
+      value: 523
       objectReference: {fileID: 0}
     - target: {fileID: 6235113791193131953, guid: 8ada8e111f608454db3706ae2eae8658, type: 3}
       propertyPath: m_IsCustomRangeActive
