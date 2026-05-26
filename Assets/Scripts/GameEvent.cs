@@ -1,7 +1,6 @@
 using System;
 using UnityEngine;
 using UnityEngine.Events;
-using UltEvents;
 
 [Serializable]
 public class GameEvent
