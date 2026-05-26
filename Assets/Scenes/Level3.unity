@@ -883,6 +883,22 @@ PrefabInstance:
       value: PlayCongratulation
       objectReference: {fileID: 0}
     - target: {fileID: 7292617535714342673, guid: 00221f26d155df84187af62f466407e4, type: 3}
+      propertyPath: onCleaned.onActivateEvents.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1639964768}
+    - target: {fileID: 7292617535714342673, guid: 00221f26d155df84187af62f466407e4, type: 3}
+      propertyPath: onCleaned.onActivateEvents.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 49057632}
+    - target: {fileID: 7292617535714342673, guid: 00221f26d155df84187af62f466407e4, type: 3}
+      propertyPath: onCleaned.onActivateEvents.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: changeCounter
+      objectReference: {fileID: 0}
+    - target: {fileID: 7292617535714342673, guid: 00221f26d155df84187af62f466407e4, type: 3}
+      propertyPath: onCleaned.onActivateEvents.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: PlayCongratulation
+      objectReference: {fileID: 0}
+    - target: {fileID: 7292617535714342673, guid: 00221f26d155df84187af62f466407e4, type: 3}
       propertyPath: onCleaned.onActivate._PersistentCalls.Array.data[2]._PersistentArguments.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -1700,10 +1716,6 @@ PrefabInstance:
       value: 904
       objectReference: {fileID: 0}
     - target: {fileID: 7292617535714342673, guid: 00221f26d155df84187af62f466407e4, type: 3}
-      propertyPath: onCleaned.onActivate._PersistentCalls.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 7292617535714342673, guid: 00221f26d155df84187af62f466407e4, type: 3}
       propertyPath: onCleaned.onActivate._PersistentCalls.Array.data[2]._Target
       value: 
       objectReference: {fileID: 1639964768}
@@ -1712,32 +1724,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 49057632}
     - target: {fileID: 7292617535714342673, guid: 00221f26d155df84187af62f466407e4, type: 3}
-      propertyPath: onCleaned.onActivate._PersistentCalls.Array.data[2]._MemberName
-      value: changeCounter
-      objectReference: {fileID: 0}
+      propertyPath: onCleaned.onActivateEvents.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1639964768}
     - target: {fileID: 7292617535714342673, guid: 00221f26d155df84187af62f466407e4, type: 3}
-      propertyPath: onCleaned.onActivate._PersistentCalls.Array.data[3]._MemberName
-      value: PlayCongratulation
-      objectReference: {fileID: 0}
-    - target: {fileID: 7292617535714342673, guid: 00221f26d155df84187af62f466407e4, type: 3}
-      propertyPath: onCleaned.onActivate._PersistentCalls.Array.data[2]._PersistentArguments.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7292617535714342673, guid: 00221f26d155df84187af62f466407e4, type: 3}
-      propertyPath: onCleaned.onActivate._PersistentCalls.Array.data[3]._PersistentArguments.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7292617535714342673, guid: 00221f26d155df84187af62f466407e4, type: 3}
-      propertyPath: onCleaned.onActivate._PersistentCalls.Array.data[2]._PersistentArguments.Array.data[0]._Type
-      value: 1
-      objectReference: {fileID: 0}
+      propertyPath: onCleaned.onActivateEvents.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 49057632}
     - target: {fileID: 7292617535714342673, guid: 00221f26d155df84187af62f466407e4, type: 3}
       propertyPath: onCleaned.onActivate._PersistentCalls.Array.data[3]._PersistentArguments.Array.data[0]._Type
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7292617535714342673, guid: 00221f26d155df84187af62f466407e4, type: 3}
-      propertyPath: onCleaned.onActivate._PersistentCalls.Array.data[2]._PersistentArguments.Array.data[0]._String
-      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8277365192553411719, guid: 00221f26d155df84187af62f466407e4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2434,6 +2430,22 @@ PrefabInstance:
       value: PlayCongratulation
       objectReference: {fileID: 0}
     - target: {fileID: 7292617535714342673, guid: 00221f26d155df84187af62f466407e4, type: 3}
+      propertyPath: onCleaned.onActivateEvents.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1639964768}
+    - target: {fileID: 7292617535714342673, guid: 00221f26d155df84187af62f466407e4, type: 3}
+      propertyPath: onCleaned.onActivateEvents.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 49057632}
+    - target: {fileID: 7292617535714342673, guid: 00221f26d155df84187af62f466407e4, type: 3}
+      propertyPath: onCleaned.onActivateEvents.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: changeCounter
+      objectReference: {fileID: 0}
+    - target: {fileID: 7292617535714342673, guid: 00221f26d155df84187af62f466407e4, type: 3}
+      propertyPath: onCleaned.onActivateEvents.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: PlayCongratulation
+      objectReference: {fileID: 0}
+    - target: {fileID: 7292617535714342673, guid: 00221f26d155df84187af62f466407e4, type: 3}
       propertyPath: onCleaned.onActivate._PersistentCalls.Array.data[2]._PersistentArguments.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -2690,19 +2702,21 @@ MonoBehaviour:
   events:
     toActivateObjects: []
     toDisActivateObjects: []
-    onActivate:
-      _PersistentCalls:
-      - _Target: {fileID: 1639964770}
-        _MemberName: LoadScene
-        _PersistentArguments:
-        - _Type: 2
-          _Int: 0
-          _String: MainMenu
-          _X: 0
-          _Y: 0
-          _Z: 0
-          _W: 0
-          _Object: {fileID: 0}
+    onActivateEvents:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1639964770}
+          m_TargetAssemblyTypeName: SceneLoad, Assembly-CSharp
+          m_MethodName: LoadScene
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: MainMenu
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!114 &1639964770
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8030,6 +8044,22 @@ PrefabInstance:
       value: PlayCongratulation
       objectReference: {fileID: 0}
     - target: {fileID: 7292617535714342673, guid: 00221f26d155df84187af62f466407e4, type: 3}
+      propertyPath: onCleaned.onActivateEvents.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1639964768}
+    - target: {fileID: 7292617535714342673, guid: 00221f26d155df84187af62f466407e4, type: 3}
+      propertyPath: onCleaned.onActivateEvents.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 49057632}
+    - target: {fileID: 7292617535714342673, guid: 00221f26d155df84187af62f466407e4, type: 3}
+      propertyPath: onCleaned.onActivateEvents.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: changeCounter
+      objectReference: {fileID: 0}
+    - target: {fileID: 7292617535714342673, guid: 00221f26d155df84187af62f466407e4, type: 3}
+      propertyPath: onCleaned.onActivateEvents.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: PlayCongratulation
+      objectReference: {fileID: 0}
+    - target: {fileID: 7292617535714342673, guid: 00221f26d155df84187af62f466407e4, type: 3}
       propertyPath: onCleaned.onActivate._PersistentCalls.Array.data[2]._PersistentArguments.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -13354,6 +13384,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7292617535714342673, guid: 00221f26d155df84187af62f466407e4, type: 3}
       propertyPath: onCleaned.onActivate._PersistentCalls.Array.data[3]._MemberName
+      value: PlayCongratulation
+      objectReference: {fileID: 0}
+    - target: {fileID: 7292617535714342673, guid: 00221f26d155df84187af62f466407e4, type: 3}
+      propertyPath: onCleaned.onActivateEvents.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1639964768}
+    - target: {fileID: 7292617535714342673, guid: 00221f26d155df84187af62f466407e4, type: 3}
+      propertyPath: onCleaned.onActivateEvents.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 49057632}
+    - target: {fileID: 7292617535714342673, guid: 00221f26d155df84187af62f466407e4, type: 3}
+      propertyPath: onCleaned.onActivateEvents.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: changeCounter
+      objectReference: {fileID: 0}
+    - target: {fileID: 7292617535714342673, guid: 00221f26d155df84187af62f466407e4, type: 3}
+      propertyPath: onCleaned.onActivateEvents.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
       value: PlayCongratulation
       objectReference: {fileID: 0}
     - target: {fileID: 7292617535714342673, guid: 00221f26d155df84187af62f466407e4, type: 3}

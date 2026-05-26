@@ -606,35 +606,39 @@ MonoBehaviour:
   enterEvents:
     toActivateObjects: []
     toDisActivateObjects: []
-    onActivate:
-      _PersistentCalls:
-      - _Target: {fileID: 7292617535714342673}
-        _MemberName: isCleaning=
-        _PersistentArguments:
-        - _Type: 1
-          _Int: 1
-          _String: 
-          _X: 0
-          _Y: 0
-          _Z: 0
-          _W: 0
-          _Object: {fileID: 0}
+    onActivateEvents:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 7292617535714342673}
+          m_TargetAssemblyTypeName: AppleDirty, Assembly-CSharp
+          m_MethodName: ChangeIsCleaning
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
   exitEvents:
     toActivateObjects: []
     toDisActivateObjects: []
-    onActivate:
-      _PersistentCalls:
-      - _Target: {fileID: 7292617535714342673}
-        _MemberName: isCleaning=
-        _PersistentArguments:
-        - _Type: 1
-          _Int: 0
-          _String: 
-          _X: 0
-          _Y: 0
-          _Z: 0
-          _W: 0
-          _Object: {fileID: 0}
+    onActivateEvents:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 7292617535714342673}
+          m_TargetAssemblyTypeName: AppleDirty, Assembly-CSharp
+          m_MethodName: ChangeIsCleaning
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &3745018936914464764 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6730685916128474631, guid: 8ada8e111f608454db3706ae2eae8658, type: 3}
@@ -683,33 +687,57 @@ MonoBehaviour:
     - {fileID: 3745018936914464764}
     - {fileID: 3391035441610576905}
     - {fileID: 1979112834575892209}
-    onActivate:
-      _PersistentCalls:
-      - _Target: {fileID: 9093147378760346498}
-        _MemberName: set_enabled
-        _PersistentArguments:
-        - _Type: 1
-          _Int: 1
-          _String: 
-          _X: 0
-          _Y: 0
-          _Z: 0
-          _W: 0
-          _Object: {fileID: 0}
-      - _Target: {fileID: 9093147378760346498}
-        _MemberName: Play
-        _PersistentArguments:
-        - _Type: 2
-          _Int: 0
-          _String: Glint
-          _X: 0
-          _Y: 0
-          _Z: 0
-          _W: 0
-          _Object: {fileID: 0}
-      - _Target: {fileID: 2012254073960135652}
-        _MemberName: Play
-        _PersistentArguments: []
+    onActivateEvents:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 9093147378760346498}
+          m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+          m_MethodName: set_enabled
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 9093147378760346498}
+          m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+          m_MethodName: Play
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Glint
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: AppleCounter, Assembly-CSharp
+          m_MethodName: changeCounter
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: VoiceLinePlayer, Assembly-CSharp
+          m_MethodName: PlayCongratulation
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   spriteDirtyBase: {fileID: 4779472840922239651}
   colorDirtyBaseTarget: {r: 0.81960785, g: 0.81960785, b: 0.81960785, a: 1}
   spriteDirtyLight: {fileID: 5613361063108864652}

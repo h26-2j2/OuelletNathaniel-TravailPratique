@@ -56,4 +56,8 @@ public class AppleDirty : MonoBehaviour
         cleaned = true;
         onCleaned.Invoke();
     }
+    public void ChangeIsCleaning(bool enteringStream)
+    {
+        isCleaning = enteringStream;
+    }
 }

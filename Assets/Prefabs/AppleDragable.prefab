@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4305003685867979762}
   - component: {fileID: 7339003231809734868}
   - component: {fileID: 9156836137228174376}
+  - component: {fileID: 7302211426547726893}
   m_Layer: 0
   m_Name: AppleDragable
   m_TagString: Apple
@@ -102,6 +103,57 @@ MonoBehaviour:
           _Z: 0
           _W: 0
           _Object: {fileID: 0}
+    onActivateEvents:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4305003685867979762}
+          m_TargetAssemblyTypeName: UnityEngine.CircleCollider2D, UnityEngine
+          m_MethodName: set_enabled
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 7302211426547726893}
+          m_TargetAssemblyTypeName: ChangeBodyType, Assembly-CSharp
+          m_MethodName: SetKinematic
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 7339003231809734868}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Rigidbody2D, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 7339003231809734868}
+          m_TargetAssemblyTypeName: UnityEngine.Rigidbody2D, UnityEngine
+          m_MethodName: set_linearVelocityX
+          m_Mode: 4
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 7339003231809734868}
+          m_TargetAssemblyTypeName: UnityEngine.Rigidbody2D, UnityEngine
+          m_MethodName: set_linearVelocityY
+          m_Mode: 4
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   dragEnd:
     toActivateObjects: []
     toDisActivateObjects: []
@@ -130,6 +182,33 @@ MonoBehaviour:
           _Z: 0
           _W: 0
           _Object: {fileID: 0}
+    onActivateEvents:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4305003685867979762}
+          m_TargetAssemblyTypeName: UnityEngine.CircleCollider2D, UnityEngine
+          m_MethodName: set_enabled
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 7302211426547726893}
+          m_TargetAssemblyTypeName: ChangeBodyType, Assembly-CSharp
+          m_MethodName: SetDynamic
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 7339003231809734868}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Rigidbody2D, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!58 &4305003685867979762
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -254,6 +333,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &7302211426547726893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2404727734293089443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cd4af5823cf1a049b76064056e71bfe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ChangeBodyType
 --- !u!1 &8803627425292783476
 GameObject:
   m_ObjectHideFlags: 0
